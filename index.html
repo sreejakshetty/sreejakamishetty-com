@@ -3,52 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sreeja Kamishetty | Tech Lead & Open Source Leader</title>
-    <meta name="description" content="Personal website of Sreeja Kamishetty, Tech Lead for Eval Infra at Gemini in Chrome, Open Source Leader, Angel Investor, and Mentor.">
+    <title>Sreeja Kamishetty | Tech Lead & AI Engineer</title>
+    <meta name="description" content="Personal website of Sreeja Kamishetty — Tech Lead for Eval Infra at Gemini in Chrome, Open Source Leader, Angel Investor, and Mentor. Weekly blog on AI, engineering, and leadership.">
     <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
-    <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
-    <!-- Header / Navigation -->
     <header class="main-header">
         <div class="container nav-container">
             <div class="logo">SK</div>
-            <nav class="nav-links">
+            <nav class="nav-links" id="navLinks">
                 <a href="#home">Home</a>
-                <a href="#values">My Values</a>
-                <a href="#experience">Work Experience</a>
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
                 <a href="#publications">Publications</a>
-                <a href="#blogs">Blogs</a>
+                <a href="#blog">Blog</a>
                 <a href="https://browseragentgirl.substack.com" target="_blank">Newsletter</a>
                 <a href="#contact">Contact</a>
             </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </header>
 
     <main>
-        <!-- Home / Hero Section -->
+
+        <!-- Hero Section -->
         <section id="home" class="hero section">
             <div class="container hero-container">
                 <div class="hero-content">
-                    <img src="./profile.jpg" alt="Sreeja Kamishetty profile picture" class="profile-pic">
+                    <img src="./profile.jpg" alt="Sreeja Kamishetty" class="profile-pic">
                     <h1 class="glow-text">Sreeja Kamishetty</h1>
-                    <p class="hero-subtitle">Tech Lead Eval Infra on Gemini in Chrome | AI/ML Tech Lead | Chromium GSoC Admin | Angel Investor | Speaker & Tech Mentor | ARCL Cricket & Tennis Player</p>
+                    <p class="hero-subtitle">Tech Lead · Eval Infra for Gemini in Chrome · AI/ML · Chromium GSoC Admin · Angel Investor · Speaker & Mentor</p>
                     <div class="hero-buttons">
                         <a href="#contact" class="btn primary-btn">Reach out</a>
-                        <a href="#experience" class="btn secondary-btn">View my work</a>
+                        <a href="#blog" class="btn secondary-btn">Read my blog</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section glass-section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-container">
+                    <div class="about-text">
+                        <p>I'm a Senior Software Engineer and Tech Lead at Google, leading Evaluation Infrastructure for Gemini in Chrome. I design AI quality systems that ensure safe, reliable deployment of on-device AI to billions of users — bridging the gap between research and production at scale.</p>
+                        <p>Outside my core role I serve as Chromium GSoC Admin, angel invest in early-stage startups, mentor engineers across career stages, and speak at conferences on AI evaluation, leadership, and open source. I'm also a passionate cricket and tennis player who believes sport teaches leadership as well as any boardroom.</p>
+                        <p>This blog is where I share what I'm learning, thinking, and building — weekly reflections on AI, engineering culture, and the human side of technology.</p>
+                    </div>
+                    <div class="about-badges">
+                        <span class="badge"><i class="fa-brands fa-google"></i> Google</span>
+                        <span class="badge"><i class="fa-solid fa-location-dot"></i> Mountain View, CA</span>
+                        <span class="badge"><i class="fa-solid fa-microchip"></i> AI / ML</span>
+                        <span class="badge"><i class="fa-brands fa-chrome"></i> Chrome</span>
+                        <span class="badge"><i class="fa-solid fa-seedling"></i> Angel Investor</span>
+                        <span class="badge"><i class="fa-solid fa-chalkboard-user"></i> Tech Mentor</span>
+                        <span class="badge"><i class="fa-solid fa-trophy"></i> Cricket & Tennis</span>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Values Section -->
-        <section id="values" class="section glass-section">
+        <section id="values" class="section">
             <div class="container">
                 <h2 class="section-title">My Values</h2>
                 <div class="values-grid">
@@ -72,56 +96,49 @@
         </section>
 
         <!-- Experience Section -->
-        <section id="experience" class="section">
+        <section id="experience" class="section glass-section">
             <div class="container">
                 <h2 class="section-title">Work Experience</h2>
                 <div class="timeline">
-                    <!-- Tech Lead Gemini -->
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
-                            <h3>Senior Software Engineer & Tech Lead - Agentic AI @ Google</h3>
-                            <span class="timeline-date">August 2024 - Present | Mountain View, CA</span>
-                            <p>Evaluation strategy and technical roadmap for Chrome’s Agentic AI and GenAI features, establishing the foundational infrastructure required to launch high-quality agents.</p>
+                            <h3>Senior Software Engineer & Tech Lead — Agentic AI @ Google</h3>
+                            <span class="timeline-date">August 2024 – Present · Mountain View, CA</span>
+                            <p>Evaluation strategy and technical roadmap for Chrome's Agentic AI and GenAI features, establishing the foundational infrastructure required to launch high-quality agents.</p>
                             <ul>
-                                <li>Architected a scalable, hybrid evaluation framework that integrates both automated LLM-based raters and human-in-the-loop workflows.</li>
+                                <li>Architected a scalable, hybrid evaluation framework integrating automated LLM-based raters and human-in-the-loop workflows.</li>
                                 <li>Designed a novel state management system for First-Party tool integrations (Gmail, Calendar, Drive), enabling deterministic evaluation of stateful agent interactions.</li>
                             </ul>
                         </div>
                     </div>
-
-                    <!-- Senior SWE -->
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
-                            <h3>Senior Software Engineer & Tech Lead - GenAI @ Google</h3>
-                            <span class="timeline-date">May 2022 - August 2024 | Seattle, WA</span>
-                            <p>Chrome-side Model Quality and Training Infra Tech Lead for all GenAI features (Auto Tabs, Compose, Wallpaper Search).</p>
+                            <h3>Senior Software Engineer & Tech Lead — GenAI @ Google</h3>
+                            <span class="timeline-date">May 2022 – August 2024 · Seattle, WA</span>
+                            <p>Chrome-side Model Quality and Training Infra Tech Lead for all GenAI features including Auto Tabs, Compose, and Wallpaper Search.</p>
                             <ul>
                                 <li>Improved Chrome performance leading to significant page load gains.</li>
                                 <li>Introduced SpareTab Architecture.</li>
-                                <li>Built infrastructure for evaluation with Precog and Critical Path Analysis with Slackline.</li>
+                                <li>Built evaluation infrastructure with Precog and Critical Path Analysis with Slackline.</li>
                             </ul>
                         </div>
                     </div>
-
-                    <!-- SWE Web On Android -->
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
                             <h3>Software Engineer @ Google</h3>
-                            <span class="timeline-date">June 2019 - April 2022 | London, UK</span>
-                            <p>Multi-Page Architecture (MPArch) development supporting Prerendering, Portals, and BackForwardCache implementation for fasternavigations.</p>
+                            <span class="timeline-date">June 2019 – April 2022 · London, UK</span>
+                            <p>Multi-Page Architecture (MPArch) development supporting Prerendering, Portals, and BackForwardCache for faster navigations in Chrome.</p>
                         </div>
                     </div>
-
-                    <!-- GSoC -->
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
                             <h3>Chromium Admin & Program Lead @ Google Summer of Code</h3>
-                            <span class="timeline-date">March 2021 - Present | Mountain View, CA / Remote</span>
-                            <p>Visionary leader of Chromium GSoC. Established program, secured executive sponsorship, and led 500+ contributors shaping open-source development.</p>
+                            <span class="timeline-date">March 2021 – Present · Mountain View, CA / Remote</span>
+                            <p>Visionary leader of Chromium GSoC. Established the program, secured executive sponsorship, and led 500+ contributors shaping open-source development worldwide.</p>
                         </div>
                     </div>
                 </div>
@@ -129,45 +146,65 @@
         </section>
 
         <!-- Publications Section -->
-        <section id="publications" class="section glass-section">
+        <section id="publications" class="section">
             <div class="container">
                 <h2 class="section-title">Publications</h2>
                 <div class="publications-list">
                     <div class="publication-item">
                         <h4>"Optimizing Urban Air Quality with Multi-Agent Traffic Flow Control"</h4>
-                        <span class="pub-details">Research Lab (IIIT Hyderabad) - SUMO and Python Based.</span>
+                        <span class="pub-details">Research Lab — IIIT Hyderabad · SUMO and Python Based</span>
                     </div>
                     <div class="publication-item">
-                        <h4>"Saving the World - Unity3D Interactive Platform"</h4>
-                        <span class="pub-details">Published Interactive Education platform about plastic waste awareness.</span>
+                        <h4>"Saving the World — Unity3D Interactive Platform"</h4>
+                        <span class="pub-details">Published interactive education platform about plastic waste awareness.</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Widgets Section -->
-        <section id="blogs" class="section">
+        <!-- Blog Section -->
+        <section id="blog" class="section glass-section">
             <div class="container">
-                <h2 class="section-title">Widgets & Feeds</h2>
-                <div class="widgets-grid">
-                    <div class="widget">
-                        <h3>Substack</h3>
-                        <p>Insights on Tech & Leadership.</p>
-                        <a href="https://browseragentgirl.substack.com" target="_blank" class="widget-link">Read Substack</a>
+                <div class="blog-section-header">
+                    <div>
+                        <h2 class="section-title section-title--left">Blog</h2>
+                        <p class="blog-subtitle">Weekly reflections on AI, engineering, and building things that matter.</p>
                     </div>
-                    <div class="widget">
-                        <h3>Twitter (X)</h3>
-                        <p>Real-time sharing of tech insights.</p>
-                        <a href="https://twitter.com/browseragentgal" target="_blank" class="widget-link">Follow on X</a>
-                    </div>
-                    <div class="widget">
-                        <h3>LinkedIn</h3>
-                        <p>Collab on open source and mentoring topics.</p>
-                        <a href="https://linkedin.com/in/sreejakamishetty" target="_blank" class="widget-link">Connect on LinkedIn</a>
+                    <a href="https://browseragentgirl.substack.com" target="_blank" class="btn primary-btn subscribe-btn">
+                        <i class="fa-solid fa-envelope"></i> Subscribe
+                    </a>
+                </div>
+
+                <!-- Blog cards injected by script.js — to add a new post, prepend to blogsData in script.js -->
+                <div class="blog-grid" id="blogGrid"></div>
+
+                <!-- Social feeds -->
+                <div class="social-feeds">
+                    <h3 class="feeds-title">Find me online</h3>
+                    <div class="widgets-grid">
+                        <div class="widget">
+                            <i class="fa-solid fa-newspaper widget-icon"></i>
+                            <h3>Substack</h3>
+                            <p>In-depth essays on Tech & Leadership.</p>
+                            <a href="https://browseragentgirl.substack.com" target="_blank" class="widget-link">Read Newsletter →</a>
+                        </div>
+                        <div class="widget">
+                            <i class="fa-brands fa-x-twitter widget-icon"></i>
+                            <h3>Twitter / X</h3>
+                            <p>Real-time tech insights and threads.</p>
+                            <a href="https://twitter.com/browseragentgal" target="_blank" class="widget-link">Follow @browseragentgal →</a>
+                        </div>
+                        <div class="widget">
+                            <i class="fa-brands fa-linkedin widget-icon"></i>
+                            <h3>LinkedIn</h3>
+                            <p>Connect on open source and mentoring.</p>
+                            <a href="https://linkedin.com/in/sreejakamishetty" target="_blank" class="widget-link">Connect →</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+
     </main>
 
     <!-- Footer -->
@@ -176,15 +213,34 @@
             <h2>Let's Connect</h2>
             <p>Reach out through the channels below:</p>
             <div class="contact-links">
-                <a href="mailto:sreeja25kamishetty@gmail.com" class="contact-item" title="Click to send an email"><i class="fa-solid fa-envelope"></i> sreeja25kamishetty@gmail.com</a>
-                <a href="https://twitter.com/browseragentgal" target="_blank" class="contact-item"><i class="fa-brands fa-twitter"></i> Twitter</a>
-                <a href="https://linkedin.com/in/sreejakamishetty" target="_blank" class="contact-item"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a href="mailto:sreeja25kamishetty@gmail.com" class="contact-item">
+                    <i class="fa-solid fa-envelope"></i> sreeja25kamishetty@gmail.com
+                </a>
+                <a href="https://twitter.com/browseragentgal" target="_blank" class="contact-item">
+                    <i class="fa-brands fa-x-twitter"></i> Twitter / X
+                </a>
+                <a href="https://linkedin.com/in/sreejakamishetty" target="_blank" class="contact-item">
+                    <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
             </div>
             <p class="copyright">&copy; 2026 Sreeja Kamishetty. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Main Script -->
+    <!-- Blog Modal -->
+    <div id="blog-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+            <span class="modal-category-badge" id="modal-category"></span>
+            <h2 id="modal-title"></h2>
+            <div class="modal-meta">
+                <time id="modal-date" class="modal-date"></time>
+                <span id="modal-read-time" class="modal-read-time"></span>
+            </div>
+            <div id="modal-body" class="modal-body"></div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
