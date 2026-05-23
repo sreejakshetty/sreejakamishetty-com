@@ -349,13 +349,62 @@ h1, h2, h3, h4 {
 }
 
 .publication-item h4 {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.pub-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.pub-year {
+    background: rgba(245,197,24,0.12);
+    color: #b38b00;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.2rem 0.65rem;
+    border-radius: 100px;
+    letter-spacing: 0.04em;
+}
+
+.pub-citations {
+    color: var(--muted-text);
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.pub-citations i {
+    color: var(--accent-yellow);
+    font-size: 0.75rem;
 }
 
 .pub-details {
     color: var(--muted-text);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.scholar-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+    color: var(--accent-yellow);
+    font-weight: 600;
     font-size: 0.95rem;
+    text-decoration: none;
+    transition: color 0.2s ease, gap 0.2s ease;
+}
+
+.scholar-link:hover {
+    color: #b38b00;
+    gap: 0.75rem;
 }
 
 /* Widgets & Feeds */
