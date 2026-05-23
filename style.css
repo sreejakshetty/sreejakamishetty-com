@@ -683,10 +683,57 @@ footer {
     gap: 0.4rem;
     transition: gap 0.2s ease, color 0.2s ease;
     font-family: 'Inter', sans-serif;
+    text-decoration: none;
 }
 
 .read-more-btn:hover {
     gap: 0.7rem;
+    color: #b38b00;
+}
+
+/* ─── Blog Loading / Error States ───────────────────────────────────────────── */
+
+.blog-loading {
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: var(--muted-text);
+    padding: 3rem 0;
+    font-size: 1rem;
+}
+
+.blog-loading-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent-yellow);
+    animation: pulse 1.2s ease-in-out infinite;
+}
+
+.blog-loading-dot:nth-child(2) { animation-delay: 0.2s; }
+.blog-loading-dot:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes pulse {
+    0%, 100% { opacity: 0.3; transform: scale(0.85); }
+    50%       { opacity: 1;   transform: scale(1); }
+}
+
+.blog-error {
+    grid-column: span 2;
+    color: var(--muted-text);
+    padding: 3rem 0;
+    font-size: 1rem;
+}
+
+.blog-error a {
+    color: var(--accent-yellow);
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 0.25rem;
+}
+
+.blog-error a:hover {
     color: #b38b00;
 }
 
